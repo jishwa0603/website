@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <!-- Google Signup Button -->
+            <button class="google-btn">
+                <i class="fab fa-google"></i> Sign up with Google
+            </button>
+            <div class="divider">
+                <hr><span>OR</span><hr>
+            </div>
+            <!-- Signup Form -->
+            <form action="#" method="POST">
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <div class="name-fields">
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    <input type="text" class="input-field" placeholder="Last Name" required>
+                </div>
+               <div class="terms"></div>
+                    <p>By signing up, you agree to our <a href="#">Terms and Conditions</a>.</p>
+                </div>
+                <button type="submit" class="submit-btn">Sign up</button>
+            </form>
+            <div class="already-registered">
+                <p>Already registered? <a href="#">Login</a></p> 
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

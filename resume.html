@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+            letter-spacing: 3px;
+            color: #000;
+            font-weight: normal;
+        }
+
+        .position {
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .summary, .contact {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact {
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .job-header h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .job-header p {
+            font-size: 14px;
+            font-style: italic;
+            color: #666;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        ul li {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        .education {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .education p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for buttons */
+        #edit-toggle, #save {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #edit-toggle:hover, #save:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 contenteditable="false">ELIZABETH WALLACE</h1>
+            <p class="position" contenteditable="false">President and CEO: Manufacturing Start-Ups and Turnarounds</p>
+            <p class="summary" contenteditable="false">P&L up to $150M | Global Teams of 400+ | 1300% Revenue Growth in 4 Years</p>
+            <p class="contact" contenteditable="false">City, State Zip | (555) 555-1234 | benhenderson@email.com | linkedin.com/in/your-name-here</p>
+        </header>
+
+        <section class="experience">
+            <h2>Professional Experience</h2>
+
+            <div class="job" contenteditable="false">
+                <div class="job-header">
+                    <h3>Company 6, Location • Job Title</h3>
+                    <p>MM/YYYY - Present</p>
+                </div>
+                <p>At the executive level, little attention should be paid to your day-to-day duties. Instead, focus on major achievements and the business impact.</p>
+                <ul>
+                    <li>Learn more about creating powerful, concise executive accomplishments.</li>
+                    <li>Added $32M in new profit over 3 years by developing a differentiated product line.</li>
+                </ul>
+            </div>
+
+            <div class="job" contenteditable="false">
+                <div class="job-header">
+                    <h3>Company 5, Location • Job Title</h3>
+                    <p>MM/YYYY - MM/YYYY</p>
+                </div>
+                <p>When applying for executive positions, focus on leadership, entrepreneurial achievements, and innovation.</p>
+                <ul>
+                    <li>Leadership: Mention key initiatives and their impact.</li>
+                    <li>Entrepreneurial: Projects that nurtured departments or brought significant results.</li>
+                    <li>Innovation: Streamlined processes, consolidated systems, or entered new markets.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p contenteditable="false">Degree • College Name, Location • Graduation Year (YYYY)</p>
+            <p contenteditable="false">Optional: List additional certifications or leadership trainings.</p>
+        </section>
+
+        <button id="edit-toggle">Edit</button>
+        <button id="save" style="display:none;">Save</button>
+    </div>
+
+    <script>
+        // Select the editable elements
+        const editableElements = document.querySelectorAll('[contenteditable]');
+        const editToggleButton = document.getElementById('edit-toggle');
+        const saveButton = document.getElementById('save');
+
+        // Function to enable edit mode
+        function enableEditMode() {
+            editableElements.forEach(el => {
+                el.setAttribute('contenteditable', 'true');
+            });
+            editToggleButton.style.display = 'none';
+            saveButton.style.display = 'block';
+        }
+
+        // Function to disable edit mode and save changes
+        function disableEditMode() {
+            editableElements.forEach(el => {
+                el.setAttribute('contenteditable', 'false');
+            });
+            editToggleButton.style.display = 'block';
+            saveButton.style.display = 'none';
+        }
+
+        // Add event listener to buttons
+        editToggleButton.addEventListener('click', enableEditMode);
+        saveButton.addEventListener('click', disableEditMode);
+    </script>
+</body>
+</html>

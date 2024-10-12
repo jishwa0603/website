@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternNotify - One Click Internship Notification</title>
+    <title>Resume </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">InternNotify</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="interviewtips.html">Interview Tips</a></li>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="resume-template.html"> Resume </a> <!-- Replace with your actual link -->
+                        </li>
+                        
+                        <li><a href="https://www.example.com/ats-checker" target="_blank">ATS Score Checker</a></li>
+                    </ul>
+                </nav>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-section">
+        <div class="quote-container">
+            <h2 class="quote">Make your dream career a reality</h2>
+        </div>
+    
+        <div class="filter-section">
+            <form id="internship-form">
+                <div class="search-section">
+                    <div class="search-container">
+                        <input type="text" id="companies" placeholder="Search Companies">
+                        <button type="submit" class="search-button">
+                            <i class="fas fa-search search-icon"></i>
+                        </button>
+                    </div>
+                
+                    <div class="dropdown-section">
+                        <select id="internship-type">
+                            <option value="" disabled selected>Internship Type</option>
+                            <option value="full-time">Full-Time</option>
+                            <option value="part-time">Part-Time</option>
+                            <option value="remote">Remote</option>
+                        </select>
+    
+                        <select id="domain">
+                            <option value="" disabled selected>Domain</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="data-science">Data Science</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="design">Design</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="vertical-scroll-section">
+        <div class="content-block">Content Block 1</div>
+        <div class="content-block">Content Block 2</div>
+        <div class="content-block">Content Block 3</div>
+        <div class="content-block">Content Block 4</div>
+        <div class="content-block">Content Block 5</div>
+    </section>
+
+    <!-- Resume Template Section -->
+
+    <div id="template1" class="resume-template" style="display: none;">
+        <h2>Resume Template 1</h2>
+        <p>Editable resume template content for Template 1.</p>
+        <button onclick="downloadTemplate('template1')">Download</button>
+      </div>
+    
+      <div id="template2" class="resume-template" style="display: none;">
+        <h2>Resume Template 2</h2>
+        <p>Editable resume template content for Template 2.</p>
+        <button onclick="downloadTemplate('template2')">Download</button>
+      </div>
+    
+      <div id="template3" class="resume-template" style="display: none;">
+        <h2>Resume Template 3</h2>
+        <p>Editable resume template content for Template 3.</p>
+        <button onclick="downloadTemplate('template3')">Download</button>
+      </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <h1>InternNotify Users</h1>
+        <p style="text-align: center;">
+            “Empowering the next generation to chase their dreams. Explore countless opportunities and build your future today. InternNotify - Your gateway to success.”
+        </p>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact us</a>
+        </div>
+        
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <p>&copy; 2024 InternNotify</p>
+    </footer>  
+</body>
+</html>

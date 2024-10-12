@@ -1,0 +1,168 @@
+/* Header Styling */
+header {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* General container styling for the resume */
+.container {
+    background-color: #2e2e2e; /* Dark gray to match the black theme but still distinguishable */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: white; /* Ensure all text is white for readability */
+}
+
+/* Header section for the name and title */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ccc; /* Lighter shade for description text */
+}
+
+/* Section headings like Experience, Education */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 0; /* Ensures no extra space below the quote */
+    padding-bottom: 0; /* Ensures no padding below the quote */
+}
+
+/* Resume Templates Section */
+.resume-templates {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: center; /* Center align the templates */
+    flex-wrap: wrap; /* Allow wrapping of templates to the next line */
+    margin: 20px;
+}
+
+.template {
+    margin: 20px; /* Space between templates */
+    text-align: center; /* Center the content in each template */
+    border: 1px solid #ccc; /* Optional: Add a border around templates */
+    padding: 10px; /* Optional: Add some padding */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    width: 200px; /* Fixed width for each template */
+    background-color: #3b3b3b; /* Dark background for templates */
+}
+
+.template img {
+    width: 100%; /* Make image responsive to the template width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners to images */
+}
+
+/* General text inside each section */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd; /* Light gray text to contrast with dark background */
+}
+
+/* Footer Styling */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Change from absolute to relative */
+    width: 100%;
+    clear: both;
+    margin-top: 50px; /* Add some space from the content above */
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.footer-links a:hover {
+    background-color: white;
+    color: black;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    border-radius: 10%;
+    transition: background-color 0.1s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Custom Scrollbar Styling */
+.vertical-scroll-section::-webkit-scrollbar {
+    width: 10px;
+}
+
+.vertical-scroll-section::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.vertical-scroll-section::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
